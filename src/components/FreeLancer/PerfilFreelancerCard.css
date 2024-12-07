@@ -1,0 +1,327 @@
+.perfil-free-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.perfil-info {
+    flex: 3;
+}
+
+.perfil-info h2 {
+    font-size: 23px;
+    color: #333;
+    border-bottom: 1px solid #07767c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.mini-card {
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px;
+    padding-right: 60px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.mini-card h3{
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    border-bottom: 1px solid #07767c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.info-detalles p, .mini-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.btn-editar {
+    position: absolute;
+    top: 10px; /* Ajusta según el espacio que necesites */
+    right: 10px; /* Ajusta según el espacio que necesites */
+    background: none;
+    border: none;
+    color: #07767c; /* Color rojo para el botón */
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-editar:hover {
+    color: #055d5c;
+}
+
+.btn-agregar-conocimiento {
+    position: absolute;
+    top: 10px; /* Ajusta según el espacio que necesites */
+    right: 10px; /* Ajusta según el espacio que necesites */
+    background: none;
+    border: none;
+    color: #07767c; /* Color rojo para el botón */
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-agregar-conocimiento:hover {
+    color: #055d5c;
+}
+
+.mini-card-agregar {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 0; /* Ajusta el espacio interior */
+}
+
+.btn-agregar {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #07767c; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px; /* Bordes redondeados del botón */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #055d5c;
+}
+
+.btn-agregar i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Fondo del círculo */
+    color: #07767c; /* Color del icono */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Hace el fondo circular */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilo para cada item dentro del mini-card */
+.conocimiento-item span {
+    display: inline-flex; /* Cambiar a inline-flex para que el contenedor se ajuste al contenido */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Borde sólido */
+    padding: 4px 8px; /* Reducir el padding para que el ítem sea más compacto */
+    margin-bottom: 4px;
+    margin-right: 1px;
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    font-size: 13px; /* Reducir el tamaño de la fuente */
+    max-width: 300px; /* Opcional: establece un ancho máximo para el item */
+}
+
+/* Estilo para el botón de eliminar dentro del item */
+.conocimiento-item .btn-eliminar {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 13px; /* Reducir el tamaño de la fuente del botón */
+    margin-left: 2px; /* Separación mínima entre el texto y la X */
+}
+
+.btn-eliminar:hover {
+    color: #e60023; /* Cambio de color al pasar el cursor por encima */
+}
+
+/* Lado derecho */
+.perfil-sidebar {
+    flex: 1;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 65px;
+}
+
+.foto-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    margin: 20px auto;
+    display: block;
+}
+
+.completitud p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.barra-progreso {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progreso {
+    background-color: #07767c;
+    height: 10px;
+}
+
+.completitud-mensaje {
+    font-size: 10px;
+    color: #666;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.curriculum, .opcionales {
+    background-color: #ffffff;
+    padding: 0 15px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.curriculum h2, .opcionales h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #07767c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.curriculum ul, .opcionales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.curriculum li, .opcionales li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.check-icon {
+    color: #07767c;
+}
+
+.btn-cambiar-foto {
+    background: none;
+    border: none;
+    color: #07767c; /* Color rojo para el botón */
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-descargar-cv, .btn-modificar-pref {
+    background-color: #07767c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+}  
+
+.btn-cambiar-cv {
+    background-color: #fff;
+    border: 2px solid #07767c;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones */
+    margin-top: 10px; /* Opcional, para dar espacio arriba del contenedor */
+}
+
+.btn-ver-cv, .btn-borrar-cv {
+    background: none;
+    border: none;
+    color: #07767c;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-editar:hover {
+    color: #055d5c;
+}
+
+.btn-cambiar-foto:hover {
+    color: #055d5c;
+}
+
+.btn-descargar-cv:hover, .btn-modificar-pref:hover{
+    background-color: #055d5c;
+}
+
+/* Estilo para los íconos de completitud */
+.check-icon {
+    color: #07767c; /* Verde para los elementos completados */
+}
+
+.x-icon {
+    color: #999; /* Gris para los elementos no completados */
+}
+
+/* Estilo para los enlaces en el sidebar */
+.perfil-sidebar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.perfil-sidebar a:hover {
+    text-decoration: underline;
+}
+
+.perfil-sidebar li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+}

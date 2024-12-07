@@ -1,0 +1,37 @@
+.modal-message-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-message-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px; /* Tamaño pequeño-medio */
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-message-button {
+    background: none;
+    border: none;
+    font-size: 24px; /* Tamaño del icono */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-message-content {
+    text-align: center; /* Centra el texto */
+    margin-top: 20px; /* Espacio entre el botón de cerrar y el mensaje */
+}

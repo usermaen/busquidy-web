@@ -1,0 +1,28 @@
+.create-cv-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.create-cv-container h2 {
+    color: #07767c;
+}
+
+.create-cv-container button {
+    background-color: #07767c;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-cv-container button:hover {
+    background-color: #055057;
+}
+
+.save-cv-button {
+    margin-top: 20px;
+}

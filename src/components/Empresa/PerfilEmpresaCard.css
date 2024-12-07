@@ -1,0 +1,69 @@
+.perfil-empresa-container {
+    display: flex;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+    margin-top: 140px;
+    margin-bottom: 70px;
+}
+
+.sidebar {
+    background-color: #07373f;
+    padding: 20px;
+    width: 250px;
+    color: #fff;
+    border-right: 1px solid #e0e0e0;
+    border-radius: 8px 0 0 8px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background-color: #07767c;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.empresa-info-section, .representante-info-section, .empresa-access-info-section {
+    margin-bottom: 20px;
+}
+
+.empresa-info-section h2, .representante-info-section h2, .empresa-access-info-section h2 {
+    color: #07373f;
+    font-size: 1.2em;
+    border-bottom: 2px solid #07373f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.empresa-info p, .representante-info p {
+    margin: 5px 0;
+}
+
+.empresa-info a, .representante-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.empresa-info a:hover, .representante-info a:hover {
+    text-decoration: underline;
+}

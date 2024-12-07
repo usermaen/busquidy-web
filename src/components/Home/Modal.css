@@ -1,0 +1,310 @@
+/* === Modal General Styles === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+}
+
+.modal-content {
+  background-color: white;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 501;
+  animation: fadeIn 0.3s ease; /* Animación de entrada */
+}
+
+/* Division de formulario */
+.divider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  margin-right: 30px;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.divider span {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* === Split Modal Content === */
+.modal-split {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* === Left Section (Information) === */
+.modal-left {
+  flex: 1;
+  background-color: #6e2243;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-left h2 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.modal-left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-left ul li {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.modal-left ul li::before {
+  content: '✔'; 
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.register-form {
+  width: 100%;
+  margin: 5px;
+}
+
+.login-form {
+  margin: 5px;
+}
+
+.login-form input {
+  margin: 10px;
+}
+
+/* === Right Section (Form) === */
+.modal-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-right select {
+  width: 420px;
+  padding: 12px; /* Un padding un poco mayor para hacer los botones más visibles */
+  font-size: 16px;
+  background-color: white; /* Fondo ligeramente gris */
+  border: 1px solid #ccc; /* Un borde más sutil */
+  border-radius: 8px; /* Bordes más redondeados */
+}
+
+.modal-right h2 {
+  font-size: 1.8rem;
+  margin: 20px 20px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal-right p {
+  font-size: 1rem; /* Tamaño de fuente */
+  color: #666; /* Color gris */
+  margin-bottom: 20px; /* Espacio entre texto y botones */
+  text-align: left;
+}
+
+/* === Input Fields === */
+.modal-right input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+}
+
+/* Button Styles */
+.modal-right button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.modal-right button:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+/* Iconos con colores específicos */
+.modal-right button.google i {
+  color: #DB4437; /* Color de Google */
+}
+
+.modal-right button.apple i {
+  color: #000000; /* Color de Apple */
+}
+
+.modal-right button.facebook i {
+  color: #4267B2; /* Color de Facebook */
+}
+
+/* Primary Button Style */
+.modal-right button.primary {
+  background-color:#272727;
+  color: white;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-right button.primary:hover {
+  background-color: black;
+}
+
+/* Secondary Button Style */
+.back-button {
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  color:black;
+  cursor: pointer;
+  text-decoration:none;
+  
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* === Modal Secondary Styles === */
+.modal-secondary {
+  z-index: 502; /* Un z-index más alto que el modal original */
+}
+
+/* === Animation Styles === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === Additional Icon Styles === */
+button i {
+  margin-right: 10px;
+}
+
+/* === Nuevo contenedor para términos y condiciones === */
+.terms-container {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 0.8rem;
+  color: #777; /* Color de texto gris */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.terms-container a {
+  color: #007bff; /* Color del enlace */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.terms-container a:hover {
+  color: #0056b3; /* Color del enlace al pasar el mouse */
+}
+
+/* Ajuste adicional para que los enlaces se vean mejor en contextos de texto */
+.terms-container p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  z-index: 1050;
+}
+
+.toast {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: bold;
+}
+
+.toast.success {
+  background-color: #07767c;
+  color: white;
+}
+
+.toast.error {
+  background-color: #dc3545;
+  color: white;
+}

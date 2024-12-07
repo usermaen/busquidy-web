@@ -1,0 +1,36 @@
+.audit-security {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.audit-security h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #07373f; /* Color principal */
+}
+
+.audit-security h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.audit-table {
+    width: 100%;
+    max-width: 800px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra la tabla */
+    border-collapse: collapse; /* Combina bordes */
+}
+
+.audit-table th, .audit-table td {
+    padding: 12px;
+    border: 1px solid #ccc; /* Borde ligero */
+    text-align: left; /* Alineación del texto */
+}
+
+.audit-table th {
+    background-color: #f4f4f4; /* Color de fondo para el encabezado */
+}
+
+.audit-table tr:hover {
+    background-color: #eaeaea; /* Color al pasar el cursor */
+}

@@ -1,0 +1,82 @@
+.create-project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.create-project-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-project-content h2 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.create-project-form-step {
+    margin-bottom: 20px;
+}
+
+.create-project-form-step h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.create-project-form-step label {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.create-project-form-group {
+    width: 700px;
+    margin-bottom: 15px;
+}
+
+.create-project-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-project-form-group input, 
+.create-project-form-group textarea, 
+.create-project-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-project-form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-project-footer button {
+    margin: 10px;
+  }
+
+.create-project-footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #07373f;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.create-project-footer button:hover {
+    background-color: #056268;
+}

@@ -1,0 +1,146 @@
+/* Payment Management Styles */
+.payment-management {
+    padding: 20px;
+}
+
+.payment-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.payment-tabs button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-tabs button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Payment Analytics Styles */
+.payment-analytics {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+.chart-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.visualization-toggle {
+    display: flex;
+    gap: 10px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.viz-toggle-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #666;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+
+.viz-toggle-btn.active {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+
+.chart-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+
+.chart-filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+.custom-select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+  }
+
+.chart-type-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+.chart-type-btn {
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+.chart-type-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+
+.chart-type-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+.summary-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+
+.stat-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+.stat-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }

@@ -1,0 +1,24 @@
+.freelancer-view-more-content {
+    text-align: center;
+    border-radius: 20px;
+}
+
+.freelancer-view-more-btn {
+    background-color: #07767c;
+    color: white;
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.freelancer-view-more-btn:hover {
+    background-color: #033a40;
+}
+
+.espacio {
+    margin-bottom: 20px;
+}

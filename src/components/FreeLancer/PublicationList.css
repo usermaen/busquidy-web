@@ -1,0 +1,112 @@
+.publication-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.publication-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.publication-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid transparent;
+  height: 250px; /* Fixed height for consistent card size */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .publication-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .publication-list {
+      grid-template-columns: 1fr;
+  }
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  border-color: #4a90e2;
+}
+
+.publication-card .publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.publication-card .publication-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.publication-card .bookmark-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.publication-card .bookmark-button:hover {
+  color: #357abd;
+}
+
+.publication-card .publication-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 15px;
+  color: #6c757d;
+}
+
+.publication-card .publication-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.publication-card .publication-company {
+  background-color: #f1f3f5;
+  padding: 10px 15px;
+  text-align: right;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.publication-card.applied {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.no-publications {
+  text-align: center;
+  color: #6c757d;
+  padding: 40px;
+  font-size: 1.1rem;
+}

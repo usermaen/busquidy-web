@@ -1,0 +1,159 @@
+.perfil-freelancer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.perfil-freelancer-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease; /* Animación de entrada */
+}
+
+.perfil-freelancer-content h2 {
+  text-align: center;
+}
+
+.perfil-freelancer-form-step {
+  margin-bottom: 20px;
+}
+
+.perfil-freelancer-form-group {
+  width: 100%; /* Ajuste de ancho para adaptarse al modal */
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+
+.perfil-freelancer-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.perfil-freelancer-form-group input,
+.perfil-freelancer-form-group textarea,
+.perfil-freelancer-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.textArea {
+  width: 20px;
+}
+
+.perfil-freelancer-form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre botones */
+  margin-top: 10px; /* Opcional, para dar espacio arriba del contenedor */
+}
+
+.grupos-container,
+.grupos-container-first {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.grupos-container label,
+.grupos-container-first label{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 32px;
+}
+
+/* grupos-container-first */
+.grupos-container-first {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.grupos-container-first input,
+.grupos-container-first textarea {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.grupos-container textarea {
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* grupos-container-second */
+.grupos-container input,
+.grupos-container textarea,
+.grupos-container select {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.grupos-container textarea {
+  width: 685px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 32px;
+}
+
+.perfil-freelancer-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: fadeIn 0.3s ease; /* Animación de entrada */
+}
+
+/* Agrupa los botones "Anterior" y "Siguiente" juntos */
+.navigation-buttons {
+  display: flex;
+  gap: 10px; /* Ajusta el espacio entre "Anterior" y "Siguiente" */
+  margin-left: auto; /* Mueve el grupo de botones a la derecha */
+}
+
+/* Estilos básicos de botones */
+.perfil-freelancer-footer button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #056268;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.perfil-freelancer-footer button:hover {
+  background-color: #07373f;
+}
+
+/* Botón "Cancelar" a la izquierda */
+.perfil-freelancer-footer button.cancelar {
+  margin-right: auto;
+}

@@ -1,0 +1,142 @@
+/* Primera sección de información */
+.como-funciona-empresa-container {
+    width: 100%;
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.como-funciona-empresa-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.como-funciona-empresa-cards-container {
+    display: flex;
+    justify-content: center; /* Centra las cards */
+    gap: 40px; /* Reduce el espacio entre las cards */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.como-funciona-empresa-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 240px; /* Reduce un poco el ancho de cada card para que se ajusten mejor */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.como-funciona-empresa-card:hover {
+    transform: translateY(-5px);
+}
+
+.como-funciona-empresa-icon {
+    font-size: 40px;
+    color: #00bfa5;
+    margin-bottom: 10px;
+}
+
+.como-funciona-empresa-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.como-funciona-empresa-card-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Segunda sección de información */
+/* Contenedor general de la sección */
+.info-freelancer-empresa-container {
+    width: 100%;
+    background-color: #f1f9f5; /* Color de fondo similar */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 0 auto; /* Centrar la sección en la página */
+}
+
+/* Título principal */
+.info-freelancer-empresa-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de cada ítem */
+.info-freelancer-empresa-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    text-align: left;
+    gap: 20px; /* Espacio entre cada ítem */
+}
+
+/* Estilo de cada ítem */
+.info-freelancer-empresa-item {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+/* Icono de cada ítem */
+.info-freelancer-empresa-icon {
+    font-size: 24px;
+    color: #2ecc71;
+    flex-shrink: 0;
+}
+
+/* Título de cada ítem */
+.info-freelancer-empresa-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Descripción de cada ítem */
+.info-freelancer-empresa-item-description {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0 0 0;
+}
+
+/* Responsive: cambia la disposición en pantallas pequeñas */
+@media (max-width: 768px) {
+    .info-freelancer-empresa-container {
+        padding: 20px;
+    }
+
+    .info-freelancer-empresa-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .info-freelancer-empresa-content {
+        gap: 15px;
+    }
+
+    .info-freelancer-empresa-icon {
+        font-size: 20px;
+    }
+
+    .info-freelancer-empresa-item-title {
+        font-size: 16px;
+    }
+
+    .info-freelancer-empresa-item-description {
+        font-size: 14px;
+    }
+}

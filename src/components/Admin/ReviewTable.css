@@ -1,0 +1,39 @@
+.reviews-table {
+    width: 100%;
+    border-collapse: collapse; /* Quitar espacios entre las celdas */
+    margin-top: 20px;
+}
+
+.reviews-table th,
+.reviews-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes de la tabla */
+}
+
+.reviews-table th {
+    background-color: #07767c;
+    color: white;
+}
+
+.reviews-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de filas alternas */
+}
+
+.reviews-table tr:hover {
+    background-color: #e1e1e1; /* Color al pasar el cursor */
+}
+
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336; /* Rojo */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e53935; /* Rojo más oscuro */
+}

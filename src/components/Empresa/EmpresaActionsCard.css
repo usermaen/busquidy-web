@@ -1,0 +1,83 @@
+.empresa-actions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #07373f, #0a474f);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    border: 1px solid #0a6978;
+    transition: transform 0.3s ease;
+}
+
+.empresa-actions-title {
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.empresa-actions-card {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas dentro del contenedor */
+    gap: 40px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si la pantalla es más pequeña */
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #07767c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .empresa-actions-container {
+        flex-direction: column; /* Disposición en columna */
+        padding: 50px 20px;
+        margin-top: 70px;
+    }
+
+    .card {
+        width: 90%; /* Tarjetas ocupan casi todo el ancho */
+        margin: 20px 0;
+    }
+}

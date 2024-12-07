@@ -1,0 +1,39 @@
+/* Modal de Datos Personales */
+.modal-datos {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-datos h2 {
+    font-size: 22px;
+    color: #07767c;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.modal-datos input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.modal-datos button {
+    background-color: #07767c;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.modal-datos button:hover {
+    background-color: #055057;
+}

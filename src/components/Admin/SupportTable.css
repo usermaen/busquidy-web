@@ -1,0 +1,53 @@
+.support-table {
+    width: 100%;
+    border-collapse: collapse; /* Quitar espacios entre las celdas */
+    margin-top: 20px;
+}
+
+.support-table th,
+.support-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes de la tabla */
+}
+
+.support-table th {
+    background-color: #07767c;
+    color: white;
+}
+
+.support-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de filas alternas */
+}
+
+.support-table tr:hover {
+    background-color: #e1e1e1; /* Color al pasar el cursor */
+}
+
+.resolve-btn,
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px; /* Espaciado entre botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resolve-btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.resolve-btn:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935; /* Rojo más oscuro */
+}

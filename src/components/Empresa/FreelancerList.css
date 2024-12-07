@@ -1,0 +1,143 @@
+/* FreelancerList.css */
+.freelancer-page-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.background-freelancer-list {
+    flex-grow: 1;
+    margin-left: 20px;
+    width: 1200px;
+    max-height: 900px; /* Ajusta según el espacio deseado */
+    overflow-y: auto; /* Permite el scroll vertical */
+    padding-right: 10px; /* Evita que el scroll se superponga a las cards */
+    scrollbar-width: thin; /* Opcional: personaliza el ancho del scroll en navegadores compatibles */
+}
+
+.cards-freelancer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 900px;
+}
+
+.card-freelancer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-freelancer:hover {
+    transform: scale(1.02);
+}
+
+.card-freelancer-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.card-freelancer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.freelancer-info-header h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.location {
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+}
+
+.stars {
+    color: #ffc107;
+}
+
+.verified, .popular {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+.verified i {
+    color: #4a90e2;
+}
+
+.popular i {
+    color: #ff6b6b;
+}
+
+.card-freelancer-info {
+    padding: 15px;
+}
+
+.card-freelancer-info p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-freelancer-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-profile,
+.apply {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-profile {
+    background-color: #4a90e2;
+}
+
+.view-profile:hover {
+    background-color: #357abd;
+}
+
+.apply {
+    background-color: #2ecc71;
+}
+
+.apply:hover {
+    background-color: #27ae60;
+}
+
+@media (max-width: 768px) {
+    .freelancer-page-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .background-freelancer-list {
+        margin-left: 0;
+    }
+
+    .cards-freelancer-container {
+        grid-template-columns: 1fr;
+    }
+}

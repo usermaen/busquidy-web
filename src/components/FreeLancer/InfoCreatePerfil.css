@@ -1,0 +1,19 @@
+.info-perfil-container {
+    background-color: #f7f7f7;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.info-perfil-container h2 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info-perfil-container p {
+    padding: 10px;
+    margin: 5px;
+}

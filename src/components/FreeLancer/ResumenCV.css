@@ -1,0 +1,22 @@
+/* Resumen del CV */
+.resumen-cv-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.resumen-cv-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #07767c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resumen-cv-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}

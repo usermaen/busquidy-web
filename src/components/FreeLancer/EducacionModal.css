@@ -1,0 +1,39 @@
+/* Modal de Educación */
+.education-modal {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.education-modal h2 {
+    font-size: 22px;
+    color: #07767c;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.education-modal input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.add-education-button {
+    background-color: #07767c;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-education-button:hover {
+    background-color: #055057;
+}

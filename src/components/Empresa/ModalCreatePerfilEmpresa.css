@@ -1,0 +1,97 @@
+.perfil-empresa-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .perfil-empresa-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ccc;
+  }
+
+  .close-button:hover {
+    color: black;
+  }
+  
+  .perfil-empresa-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .perfil-empresa-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .perfil-empresa-form-group input,
+  .perfil-empresa-form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .grupos-empresa-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grupos-empresa-container label{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 12px;
+  }
+  
+  .grupos-empresa-container input {
+    width: 330px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .perfil-empresa-form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .perfil-empresa-form-actions button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #056268;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .perfil-empresa-form-actions button:hover {
+    background-color: #07373f;
+  }
+  

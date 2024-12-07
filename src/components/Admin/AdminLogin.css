@@ -1,0 +1,63 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px; /* Aumento del ancho */
+    height: 400px; /* Fijo para centrar mejor */
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    padding: 30px; /* Espaciado interno */
+    margin: 0 auto; /* Centra el contenedor en el medio */
+}
+
+.login-container h1 {
+    margin-bottom: 40px;
+    color: #07373f; /* Cambia el color del texto al verde elegido */
+    font-family: 'Arial', sans-serif; /* Fuente del título */
+    text-align: center; /* Centrar el título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ancho del formulario ajustado al contenedor */
+}
+
+form input {
+    margin: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 15px; /* Espaciado entre los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #07373f; /* Color del borde al enfocar */
+    outline: none; /* Sin contorno al enfocar */
+}
+
+.login-container button {
+    width: 100%; /* Ancho del botón ajustado al contenedor */
+    padding: 12px; /* Aumento del padding */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #07373f; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    margin: 0 auto; /* Centra el botón en el medio */
+}
+
+.login-container button:hover {
+    background-color: #0a4c53; /* Color del botón al pasar el ratón (un tono más claro) */
+}

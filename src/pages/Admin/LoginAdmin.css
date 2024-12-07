@@ -1,0 +1,8 @@
+.admin-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #f0f9f0;
+}

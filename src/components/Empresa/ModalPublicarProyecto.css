@@ -1,0 +1,133 @@
+.modal-overlay-pay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+    backdrop-filter: blur(4px);
+}
+
+.modal-container-pay {
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-header-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.modal-title-pay {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.modal-close-btn-pay {
+    background: none;
+    border: none;
+    color: #6b7280;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-close-btn-pay:hover {
+    color: #111827;
+}
+
+.modal-body-pay {
+    padding: 1.5rem;
+}
+
+.modal-body-pay p {
+    margin-bottom: 1rem;
+}
+
+.modal-footer-pay {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.25rem;
+    border-top: 1px solid #e5e7eb;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.btn-secondary-pay {
+    margin-right: 0.75rem;
+    padding: 0.5rem 1rem;
+    color: #6b7280;
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn-secondary-pay:hover {
+    color: #111827;
+}
+
+.btn-primary-pay {
+    padding: 0.5rem 1.5rem;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary-pay:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-primary-pay:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.error-message {
+    background-color: #fecaca;
+    border: 1px solid #fca5a5;
+    color: #7f1d1d;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

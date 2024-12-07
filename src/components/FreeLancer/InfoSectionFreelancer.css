@@ -1,0 +1,168 @@
+/* Primera sección de información */
+.como-funciona-freelancer-container {
+    width: 100%;
+    padding: 40px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.como-funciona-freelancer-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.como-funciona-freelancer-cards-container {
+    display: flex;
+    justify-content: center; /* Centra las cards */
+    gap: 40px; /* Reduce el espacio entre las cards */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.como-funciona-freelancer-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 240px; /* Reduce un poco el ancho de cada card para que se ajusten mejor */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.como-funciona-freelancer-card:hover {
+    transform: translateY(-5px);
+}
+
+.como-funciona-freelancer-icon {
+    font-size: 40px;
+    color: #00bfa5;
+    margin-bottom: 10px;
+}
+
+.como-funciona-freelancer-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.como-funciona-freelancer-card-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Segunda sección de información */
+/* Contenedor general que envuelve la imagen y el contenido */
+.info-freelancer-wrapper {
+    display: flex;
+    justify-content: center; /* Centra todo el contenido horizontalmente */
+    align-items: center;
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 40px;
+    gap: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+/* Estilos para la imagen */
+.info-freelancer-image {
+    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+    margin-right: 20px; /* Espacio adicional a la derecha de la imagen */
+}
+
+.info-freelancer-image img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* Contenedor de la sección principal de información */
+.info-freelancer-section {
+    flex: 1; /* Deja que la sección de información ocupe el resto del espacio */
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    margin-right: 170px;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+}
+
+/* Contenido de la sección */
+.info-freelancer-content {
+    max-width: 600px; /* Ajusta el ancho máximo para el texto */
+    text-align: center; /* Centra el texto */
+}
+
+/* Títulos y párrafos */
+.info-freelancer-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-freelancer-content p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Lista de beneficios */
+.info-freelancer-benefits {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.info-freelancer-benefits li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-freelancer-benefits li::before {
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+/* Botón de acción */
+.info-freelancer-button {
+    background-color: #07767c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.info-freelancer-button:hover {
+    background-color: #07373f;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .info-freelancer-wrapper {
+        flex-direction: column; /* Cambia a disposición en columna en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .info-freelancer-image {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+    }
+
+    .info-freelancer-image img {
+        width: 200px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+
+    .info-freelancer-content {
+        max-width: 100%; /* Asegura que el contenido ocupe todo el ancho en pantallas pequeñas */
+    }
+}

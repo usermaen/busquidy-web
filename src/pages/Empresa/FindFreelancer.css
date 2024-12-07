@@ -1,0 +1,20 @@
+.background-color {
+    background-color: #f0f7f9;
+}
+
+.custom-findfreelancer-container {
+    display: flex;
+    justify-content: center; /* Centramos ambos elementos */
+    gap: 40px; /* Espacio entre los filtros y la lista */
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #f0f7f9;
+    max-width: 1200px; /* Añadimos un max-width para no ocupar todo el ancho en pantallas grandes */
+}
+
+
+@media (max-width: 768px) {
+    .custom-findfreelancer-container {
+        flex-direction: column;
+    }
+}

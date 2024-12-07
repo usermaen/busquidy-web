@@ -1,0 +1,192 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    border-top: 1px solid #e7e7e7;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    font-family: 'Arial', sans-serif; /* Cambia a la fuente deseada */
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre columnas */
+    flex-wrap: wrap; /* Permitir columnas en múltiples filas */
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Ajustar ancho mínimo para columnas */
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+    display: flex; /* Para alinear el texto y el ícono */
+    justify-content: space-between;
+    align-items: center; /* Centrar verticalmente */
+    margin-right: 20px;
+}
+
+.footer-column h3 .icon {
+    margin-left: 8px; /* Espaciado entre el texto y el ícono */
+    transition: transform 0.3s; /* Transición para la rotación */
+    transform: rotate(0deg); /* Rotación inicial */
+    opacity: 0;
+}
+
+.footer-column.active h3 .icon {
+    transform: rotate(180deg); /* Rotar el ícono cuando está activo */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #0a6978;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px; /* Espaciado entre iconos */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0a6978;
+}
+
+.app-stores {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre los botones */
+}
+
+.btn-stores {
+    background: none;
+    border: none;
+    display: inline-block;
+    padding: 0; /* Elimina el espacio extra alrededor de la imagen */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.app-stores img {
+    width: 130px; /* Ajustar el tamaño de los iconos */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.app-stores .btn-stores:hover img {
+    transform: scale(1.1); /* Animación al pasar el mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #e7e7e7;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+@media (max-width: 768px) { /* Aplicar solo en móviles */
+    .footer-columns {
+        flex-direction: column; /* Cambia a columnas apiladas */
+        padding: 0 20px; /* Ajusta el padding lateral */
+    }
+
+    .footer-column {
+        margin: 0 0; /* Espaciado entre columnas */
+        text-align: start; /* Alinear texto a la izquierda */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    }
+
+    .footer-column h3 {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        position: relative; /* Para el efecto de subrayado */
+    }
+
+    .footer-column h3::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: #0a6978; /* Color de subrayado */
+        position: absolute;
+        left: 0;
+        bottom: -5px; /* Ajustar la posición del subrayado */
+        transition: width 0.3s; /* Transición suave */
+    }
+
+    .footer-column h3:hover::after {
+        width: 100%; /* Ampliar subrayado al pasar el mouse */
+    }
+
+    .footer-column ul {
+        max-height: 0; /* Inicialmente oculto */
+        overflow: hidden; /* Esconder el contenido que se desborda */
+        transition: max-height 0.3s ease-in-out; /* Transición suave */
+    }
+
+    .footer-column.active ul {
+        max-height: 200px;
+    }
+
+    .footer-column ul li {
+        margin: 5px 0; /* Ajusta el margen de los elementos de la lista */
+        opacity: 0; /* Comienza invisible */
+        transition: opacity 0.3s ease-in-out; /* Transición para la opacidad */
+    }
+
+    .footer-column.active ul li {
+        opacity: 1; /* Hacer visible cuando está activa */
+    }
+
+    .footer-bottom {
+        padding: 15px 0; /* Ajusta el padding del footer inferior */
+    }
+
+    .footer-bottom p {
+        font-size: 12px; /* Ajusta el tamaño del texto inferior */
+    }
+
+    .footer-column h3 .icon {
+        opacity: 1;
+        transition: transform 0.3s; /* Transición para la rotación */
+        transform: rotate(0deg); /* Rotación inicial */
+    }
+    .footer-column.active h3 .icon {
+        transform: rotate(180deg); /* Rotar el ícono cuando está activo */
+    }
+}
