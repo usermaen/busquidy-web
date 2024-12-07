@@ -28,6 +28,7 @@ const corsOptions = {
       process.env.FRONTEND_URL
     ];
     
+    
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
