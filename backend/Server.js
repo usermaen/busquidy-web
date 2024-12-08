@@ -19,30 +19,9 @@ const uploadsDir = path.join(__dirname, process.env.UPLOADS_DIR || "uploads/cvs"
 
 // Middleware
 const corsOptions = {
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    const allowedOrigins = [
-      'http://localhost:3000', 
-      'https://localhost:3000',
-      'https://busquidy-web-1.onrender.com',
-      process.env.FRONTEND_URL
-    ];
-    
-    
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: [
-    'Origin', 
-    'X-Requested-With', 
-    'Content-Type', 
-    'Accept', 
-    'Authorization'
-  ],
+  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
   credentials: true,
   optionsSuccessStatus: 200
 };
