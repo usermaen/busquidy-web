@@ -16,6 +16,7 @@ const routes = require("./routes");
 const app = express();
 const port = process.env.PORT || 3001;
 const uploadsDir = path.join(__dirname, process.env.UPLOADS_DIR || "uploads/cvs");
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware
 const corsOptions = {
@@ -55,6 +56,14 @@ app.use((err, req, res, next) => {
     message: "Error interno del servidor",
     error: process.env.NODE_ENV === "development" ? err.message : undefined,
   });
+});
+
+app.use((req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self';"
+  );
+  next();
 });
 
 // Verificar si el directorio existe, si no, crearlo
