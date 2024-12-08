@@ -24,7 +24,7 @@ const corsOptions = {
     const allowedOrigins = [
       'http://localhost:3000', 
       'https://localhost:3000',
-      'https://busquidy-web-1.onrender.com/',
+      'https://busquidy-web-1.onrender.com',
       process.env.FRONTEND_URL
     ];
     
